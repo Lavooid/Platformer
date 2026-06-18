@@ -1,0 +1,66 @@
+# =========================
+# Unity generated folders
+# =========================
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+UserSettings/
+
+# =========================
+# Memory Captures
+# =========================
+
+MemoryCaptures/
+
+# =========================
+# Addressables
+# =========================
+
+ServerData/
+
+# =========================
+# Visual Studio / Rider
+# =========================
+
+.vs/
+.idea/
+.gradle/
+
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+
+# =========================
+# OS files
+# =========================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Crash reports
+# =========================
+
+sysinfo.txt
+
+# =========================
+# Generated packages
+# =========================
+
+*.apk
+*.aab
+
+# =========================
+# Unity Collaborate
+# =========================
+
+.collabignore
