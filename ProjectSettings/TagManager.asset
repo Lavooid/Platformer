@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Ground
   - Jumper
+  - Lava
+  - Exit
+  - Bg
+  - Pl1
+  - Pl2
   layers:
   - Default
   - TransparentFX

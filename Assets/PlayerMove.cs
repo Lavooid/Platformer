@@ -1,23 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
     public GameObject player;
-    Rigidbody2D rb;
+    Rigidbody2D rb, rb_c, rb_jump;
     float speed = 5f;
     public Animator animator;
     public static bool IsRun;
-    public GameObject camera;
+    public GameObject Mcamera;
 
-    bool IsGrounded = false;
+    public static bool IsGrounded = false;
     float JumpHeight = 6f;
     // Start is called before the first frame update
     void Start()
     {
         rb = player.GetComponent<Rigidbody2D>();
-        camera.transform.position = new Vector3(player.transform.position.x + 4, player.transform.position.y, -10f);
+        rb_c = Mcamera.GetComponent<Rigidbody2D>();
+        Mcamera.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10f);
     }
 
     // Update is called once per frame
@@ -44,10 +46,12 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             rb.transform.position += Vector3.right * speed * Time.deltaTime;
+            rb.transform.localScale = new Vector3(0.25f, 0.25f, 1f);
         }
         if (Input.GetKey(KeyCode.A))
         {
             rb.transform.position += Vector3.left * speed * Time.deltaTime;
+            rb.transform.localScale = new Vector3(-0.25f, 0.25f, 1f);
         }
         if (IsGrounded)
         {
@@ -60,25 +64,24 @@ public class PlayerMove : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            IsGrounded = false;
-        }
+
         if (collision.gameObject.CompareTag("Jumper"))
         {
-            JumpHeight = 10f;
+            JumpHeight = 6f;
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            IsGrounded = true;
-        }
+
         if (collision.gameObject.CompareTag("Jumper"))
         {
-            JumpHeight = 6f;
+            JumpHeight = 10f;
         }
+        if (collision.gameObject.CompareTag("Lava"))
+        {
+            rb.transform.position = new Vector3(-4,-3,0);
+        }
+
     }
 }
