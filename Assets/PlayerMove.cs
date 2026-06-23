@@ -35,8 +35,7 @@ public class PlayerMove : MonoBehaviour
             animator.SetBool("IsJumping", IsJumping);
         }
 
-        //txt.text = Score.ToString() + "/8 coins";
-        txt.text = "UPD: TEST";
+        txt.text = Score.ToString() + "/11 coins";
     }
 
     void Move()
