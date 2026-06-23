@@ -11,8 +11,10 @@ public class PlayerMove : MonoBehaviour
     public Animator animator;
     public static bool IsRun;
     public GameObject Mcamera;
+    public static int Score = 0;
+    public TextMeshProUGUI txt;
 
-    public static bool IsGrounded = false;
+    public static bool IsGrounded = false, IsJumping = false;
     float JumpHeight = 6f;
     // Start is called before the first frame update
     void Start()
@@ -29,7 +31,12 @@ public class PlayerMove : MonoBehaviour
         {
             Move();
             animator.SetBool("IsRun", IsRun);
+            animator.SetBool("IsGrounded", IsGrounded);
+            animator.SetBool("IsJumping", IsJumping);
         }
+
+        //txt.text = Score.ToString() + "/8 coins";
+        txt.text = "UPD: TEST";
     }
 
     void Move()
@@ -53,13 +60,22 @@ public class PlayerMove : MonoBehaviour
             rb.transform.position += Vector3.left * speed * Time.deltaTime;
             rb.transform.localScale = new Vector3(-0.25f, 0.25f, 1f);
         }
-        if (IsGrounded)
+        
+        
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            
+            if (IsGrounded)
             {
                 rb.velocity = new Vector2(rb.velocity.x, JumpHeight);
+                IsJumping = true;
             }
         }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            IsJumping = false;
+        }
+        
 
     }
     private void OnCollisionExit2D(Collision2D collision)
@@ -81,6 +97,11 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.CompareTag("Lava"))
         {
             rb.transform.position = new Vector3(-4,-3,0);
+        }
+
+        if (collision.gameObject.CompareTag("Coin"))
+        {
+            Destroy(collision.gameObject);
         }
 
     }

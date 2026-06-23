@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f3f7a30db5243d848a23814dc3768889
+guid: 01b10e18d9c10db409a4c0b115ff3e29
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,106 +97,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Chelik_no_bg_0
+      name: Fall_no_bg_2
       rect:
         serializedVersion: 2
-        x: 72
-        y: 51
-        width: 268
-        height: 459
+        x: 532
+        y: 128
+        width: 344
+        height: 495
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be9af6e2c3fac4a4eae3bc1a3efb864d
-      internalID: 644174118
+      spriteID: 4cc92203aa9007e44879329a91d473e1
+      internalID: -455397565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chelik_no_bg_1
+      name: Fall_no_bg_7
       rect:
         serializedVersion: 2
-        x: 335
-        y: 53
-        width: 219
-        height: 457
+        x: 793
+        y: 77
+        width: 446
+        height: 327
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b9b1fac5cbe9744fbc2ef00e5ba8c84
-      internalID: -2017241646
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chelik_no_bg_2
-      rect:
-        serializedVersion: 2
-        x: 558
-        y: 51
-        width: 220
-        height: 458
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5896223b06896d34fad7a5104c61ef26
-      internalID: 332388958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chelik_no_bg_3
-      rect:
-        serializedVersion: 2
-        x: 767
-        y: 51
-        width: 228
-        height: 459
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70cb926431f2b5145870039b20a5d376
-      internalID: -68541877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chelik_no_bg_4
-      rect:
-        serializedVersion: 2
-        x: 999
-        y: 51
-        width: 253
-        height: 459
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e81ae3fdd524b54d9481ac2d56acb69
-      internalID: -803465697
+      spriteID: fb027c7ad16c6b444ba47a6c7e0477fc
+      internalID: 1828940189
       vertices: []
       indices: 
       edges: []
@@ -212,11 +149,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Chelik_no_bg_0: 644174118
-      Chelik_no_bg_1: -2017241646
-      Chelik_no_bg_2: 332388958
-      Chelik_no_bg_3: -68541877
-      Chelik_no_bg_4: -803465697
+      Fall_no_bg_0: -2124951221
+      Fall_no_bg_1: -1536592386
+      Fall_no_bg_2: -455397565
+      Fall_no_bg_3: -1074940556
+      Fall_no_bg_4: -89551689
+      Fall_no_bg_5: -1308851538
+      Fall_no_bg_6: 1317334585
+      Fall_no_bg_7: 1828940189
+      Fall_no_bg_8: -1373338531
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

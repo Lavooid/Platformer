@@ -30,6 +30,7 @@ public class Coll : MonoBehaviour
         if (!collision.gameObject.CompareTag("Bg"))
         {
             PlayerMove.IsGrounded = true;
+            PlayerMove.IsJumping = false;
         }
     }
 }

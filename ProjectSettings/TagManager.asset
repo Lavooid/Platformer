@@ -11,6 +11,7 @@ TagManager:
   - Bg
   - Pl1
   - Pl2
+  - Coin
   layers:
   - Default
   - TransparentFX
